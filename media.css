@@ -1,0 +1,35 @@
+@media screen and (max-width: 1485px){
+    .offers {
+        width:65%
+    }
+}
+@media screen and (max-width: 1373px){
+    .offers {
+        width:72%
+    }
+}
+@media screen and (max-width: 1250px){
+    header {
+        width:90%
+    }
+    .offers {
+        width:82%
+    }
+}
+@media screen and (max-width: 1100px){
+    header {
+        width:95%
+    }
+    
+
+    header .content_1 .cont_2 .cards {
+    overflow: auto;
+}
+    
+    header .content_1 .cont_1 {
+        width: 60%;
+    }    
+    .offers {
+        width:95%
+    }
+}

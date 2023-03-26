@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,700;1,100;1,200;1,300;1,500;1,700&display=swap');
+/* *{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+Body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 80%;
+    height: 95vh;
+    margin: auto;
+}
+
+header nav {
+    width: 95%;
+    height: 7%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+header nav ul  {
+    list-style: none;
+    display: flex;       
+}
+header nav h4 img{  
+    width: 55px;
+    height: 28px;
+    margin-left: 5px;    
+}
+
+header nav ul li {
+    padding: 3px 15px;     
+}
+
+header nav ul li:nth-last-child(1) {
+    background: #000;  
+    border-radius: 20px;
+    padding: 5px 20px;   
+}
+
+header nav ul li:nth-last-child(1) a{
+    color: #fff;   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #121213;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .2s linear;        
+}
+
+header nav ul li a:hover{
+    color: gray;     
+}
+
+header nav .bi-three-dots{
+    display: none;
+}
+
+header .content{
+    position: relative;
+    width: 100%;
+    height: 93%;
+}
+
+header .content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('Assets/Images/Forets.jpg')no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+header .content .cont{
+    width: 500px;
+    height: auto;
+    color: #fff;
+    padding: 30px;
+
+}
+
+header .content .cont h1{
+    line-height: 40px;
+    font-weight: 800;   
+}
+
+header .content .cont p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(241, 241, 241);  
+}
+
+header .content .cont button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .content .cont button:hover{
+    background: rgb(67, 67, 67);
+    border: 2px solid rgb(67, 67, 67);
+}
+
+header .content_1 {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+
+}
+
+header .content_1 .cont_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgb(67, 67, 67);
+    z-index: 1;
+    padding: 10px 20px;
+}
+header .content_1 .cont_1 .card {
+    width: 200px;
+    height: 100%;
+}
+
+header .content_1 .cont_1 .card h4 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+}
+header .content_1 .cont_1 .card h4 .bi{
+    position: absolute;
+    font-size: 13px;
+    margin: 5px 0px 0px 5px;
+    transition: .3s linear;
+}
+header .content_1 .cont_1 .card input {
+    margin-top: 3 px;
+    padding: 3px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+header .content_1 .cont_1 .card input[type="button"] {
+   background: #000;
+   color: #fff;
+   border: none;
+   outline: none;
+   padding: 10px 20px;
+   border-radius: 20px;
+   transition: .3s linear;
+   cursor: pointer;
+
+}
+
+header .content_1 .cont_1 .card input[type="button"]:hover {
+    background: gray; 
+ }
+
+ header .content_1 .cont_2 {
+    position:relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 40px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 20px 25px -10px rgb(165, 165, 165);
+
+ }
+ 
+ header .content_1 .cont_2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background:rgb(241, 241, 241, .7);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+ }
+ header .content_1 .cont_2 h4 {
+    margin: 0;
+    padding:60px 0px 15px 1.7%;
+ }
+
+
+
+ /* les cartes pour les destination */
+ header .content_1 .cont_2 .cards {
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ /* Carte 1 pour Taghit (Sahara) */
+ header .content_1 .cont_2 .cards .card {
+    width: 220px;
+    height: 180;
+
+
+ }
+ header .content_1 .cont_2 .cards .card h3{
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+ }
+
+ header .content_1 .cont_2 .cards .card h3 img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+ }
+ header .content_1 .cont_2 .cards .card img{
+    width: 200px;
+    height: 140px;
+    border-radius: 5px;
+  
+ }
+ header .content_1 .cont_2 .cards .card img:hover{
+    transform: scale(1.2);  
+    transition: transform 1s;
+ }
+ header .content_1 .cont_2 .cards .card .btn_ville{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ header .content_1 .cont_2 .cards .card .btn_ville a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-size: 11px;
+    transition: .3s linear;
+  }
+  header .content_1 .cont_2 .cards .card .btn_ville a:hover{
+    background: gray;
+  }
+ 
+  header .content_1 .cont_2 .cards .card .btn_ville h5{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+  }
+header .content_1 .cont_2 .cards .card .btn_ville h5 span{
+    font-size: 13px;
+    font-weight: 700;
+}
+.offers{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+    transition: .5s linear;
+}  
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* les cartes en bas  */
+
+.offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 200px;
+}
+.offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+.offers .cards{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.offers .cards .card{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin-top: 10px;
+}
+.offers .cards .card h3{
+    width: 140px;
+    padding: 6px 0px;
+    background: rgb(165, 243, 165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items:center;
+    margin: auto;
+}
+.offers .cards .card .img_text {
+    position: relative;
+    width: 100%;
+    height:250px;
+    margin-top: 5px;
+    
+}
+.offers .cards .card .img_text img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.offers .cards .card .img_text h4{
+    position:absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+ 
+}
+.offers .cards .card .img_text h4::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);  
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+.offers .cards .card .card-{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(241, 241, 241);
+    padding: 5px 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.offers .cards .card .card- .prix , .jour{
+    margin: 0px 8px;
+}
+.offers .cards .card .card- .prix .heart_chat{
+    display: flex;
+    align-items: center;   
+}
+.offers .cards .card .card- .prix .heart_chat i:nth-child(1){
+    color: red;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.offers .cards .card .card- .prix .heart_chat i span{
+    color: aqua;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+.offers .cards .card .card- .prix .heart_chat i:nth-child(2){
+    color: rgb(112, 196, 229);
+    font-size: 13px;
+    margin-left: 10px;
+}
+.offers .cards .card .card- .prix .info_prix{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.offers .cards .card .card- .prix .info_prix a{
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    transition: .3s linear;
+    margin-right: 13px;
+}
+.offers .cards .card .card- .prix .info_prix a:hover{
+    color: gray;
+}
+.offers .cards .card .card- .prix .info_prix h4{
+    margin: 0;
+    font-size: 13px;
+}
+.offers .cards .card .card- .jour{
+    color:#fff;
+    background:#000;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.offers .cards .card .card- .jour:hover{
+    transform: rotate(360deg);
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background: rgb(249, 249, 255);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+footer ul li{
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+
+}
+footer ul li h6{
+    font-size: 11px;
+    font-weight: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 20px;
+    border-top: 1px solid;
+    padding-top: 3px;
+
+}
